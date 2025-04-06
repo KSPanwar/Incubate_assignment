@@ -16,4 +16,5 @@ we will do the assignment in the following steps:
  4. Last code refactor for Step1 
  ![ScreenShot](./images/Step1LastRefactor.jpg)
  # Step 2:  Given String s contains any amount of number comma separated
- 
+ no chnages in code function as all the test cases passed with the last refactor of Step1
+ ![ScreenShot](./images/AnyAmountOfNumbers.jpg)
