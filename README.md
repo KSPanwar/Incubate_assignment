@@ -18,3 +18,6 @@ we will do the assignment in the following steps:
  # Step 2:  Given String s contains any amount of number comma separated
  no chnages in code function as all the test cases passed with the last refactor of Step1
  ![ScreenShot](./images/AnyAmountOfNumbers.jpg)
+
+ # Step 3: Given String s contains any amount of number but  each place can have \n
+ Support new line character \n

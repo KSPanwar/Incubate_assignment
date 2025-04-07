@@ -6,7 +6,7 @@ function sumCalculator(s){
     //     const num = parseInt(s);
     //     return isNaN(num) ? 0 : num;
     // }
-    const sum = s.split(',').map(x => parseInt(x) || 0).reduce((a,b)=> a+b,0);
+    const sum = s.split(/,|\n/).map(x => parseInt(x) || 0).reduce((a,b)=> a+b,0);
     return sum;
 }
 
