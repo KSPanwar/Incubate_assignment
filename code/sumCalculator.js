@@ -13,8 +13,13 @@ function sumCalculator(s){
         const customDelimiter = parts[0][2];
         regexpression = new RegExp(`[${customDelimiter},\n]`);
     }
-    const sum = s.split(regexpression).map(x => parseInt(x) || 0).reduce((a,b)=> a+b,0);  // only use of regular expression like splitting on the basis of ,;\n
-    return sum;
+    const numbers= s.split(regexpression).map(x => parseInt(x) || 0) // only use of regular expression like splitting on the basis of ,;\n
+    const negatives = numbers.filter(x => x < 0);
+    if (negatives.length > 0) {
+        throw new Error(`Negative numbers not allowed: ${negatives.join(',')}`);
+      }
+
+    return numbers.reduce((a,b)=> a+b,0);
 }
 
 module.exports = sumCalculator;

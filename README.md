@@ -35,3 +35,9 @@ now its work with regexpression varibale
 now to support different delimeters we dynamically take the delimeter and add to regexpression variable
 ![ScreenShot](./images/AnyDelimeterBetweenNumberfinalcode.jpg)
 ![ScreenShot](./images/AnyDemileterTestCase.jpg)
+
+# Step 5 : Throw Error if a -ve number is present in the string
+Test Case fails
+![ScreenShot](./images/ErrorFails.jpg)
+Test Case Passes
+![ScreenShot](./images/ErrorPass.jpg)
