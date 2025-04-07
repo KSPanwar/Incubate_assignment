@@ -21,3 +21,17 @@ we will do the assignment in the following steps:
 
  # Step 3: Given String s contains any amount of number but  each place can have \n
  Support new line character \n
+
+ ![ScreenShot](./images/nextLineFail.jpg)
+ ![ScreenShot](./images/nextLinePass.jpg)
+# Step 4 : Given String s ,return sum that split on the basis of different delimeter
+
+Approach we know we have the string like this "//[delimeter]\n[numbers]" 
+just get the delimeter and add it to the regular expression to split the string.
+![ScreenShot](./images/DelimeterBetweenNumbersCode.jpg)
+![ScreenShot](./images/DelimeterBetweenNumbersPass.jpg)
+now its work with regexpression varibale 
+
+now to support different delimeters we dynamically take the delimeter and add to regexpression variable
+![ScreenShot](./images/AnyDelimeterBetweenNumberfinalcode.jpg)
+![ScreenShot](./images/AnyDemileterTestCase.jpg)

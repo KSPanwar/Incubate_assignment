@@ -6,8 +6,16 @@ function sumCalculator(s){
     //     const num = parseInt(s);
     //     return isNaN(num) ? 0 : num;
     // }
-    const sum = s.split(/,|\n/).map(x => parseInt(x) || 0).reduce((a,b)=> a+b,0);
+    // let string = s;
+    let regexpression = /[,\n]/;
+    if(s.startsWith("//")){
+        const parts = s.split("\n");
+        const customDelimiter = parts[0][2];
+        regexpression = new RegExp(`[${customDelimiter},\n]`);
+    }
+    const sum = s.split(regexpression).map(x => parseInt(x) || 0).reduce((a,b)=> a+b,0);  // only use of regular expression like splitting on the basis of ,;\n
     return sum;
 }
 
 module.exports = sumCalculator;
+

@@ -28,4 +28,15 @@ test('\n in between number',()=>{
     expect(sumCalculator('40,10\n2')).toBe(52);
 })
 
+test('Delimeter between Numbers',()=>{
+    expect(sumCalculator('//;\n1;2')).toBe(3);  // test case for ;
+    expect(sumCalculator('//-\n3-5')).toBe(8); // it will work for any delimiter now 
+})
+
+test('-ve numbers',()=>{
+    expect(sumCalculator('//;\n1;2')).toBe(3);  // test case for ;
+    expect(sumCalculator('//-\n3-5')).toBe(8); // it will work for any delimiter now 
+})
+
+
 
