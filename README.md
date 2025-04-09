@@ -1,5 +1,5 @@
 # Incubyte_assignment
-Incubate Assessment - String calculator 
+Incubyte Assessment - String calculator 
 
 we will do the assignment in the following steps:
 
